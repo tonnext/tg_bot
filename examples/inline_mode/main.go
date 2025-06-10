@@ -5,8 +5,8 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/go-telegram/bot"
-	"github.com/go-telegram/bot/models"
+	"github.com/tonnext/tg_bot"
+	"github.com/tonnext/tg_bot/models"
 )
 
 // Use inline mode @botname some_text
