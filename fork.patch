@@ -1,0 +1,627 @@
+Subject: [PATCH] fork
+---
+Index: examples/middleware/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/middleware/main.go b/examples/middleware/main.go
+--- a/examples/middleware/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/middleware/main.go	(date 1749526078013)
+@@ -7,8 +7,8 @@
+ 	"os/signal"
+ 	"sync"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send any text message to the bot after the bot has been started
+Index: examples/send_photo/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/send_photo/main.go b/examples/send_photo/main.go
+--- a/examples/send_photo/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/send_photo/main.go	(date 1749526077947)
+@@ -5,8 +5,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send any text message to the bot after the bot has been started
+Index: examples/inline_mode/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/inline_mode/main.go b/examples/inline_mode/main.go
+--- a/examples/inline_mode/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/inline_mode/main.go	(date 1749526077944)
+@@ -5,8 +5,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Use inline mode @botname some_text
+Index: examples/edit_message/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/edit_message/main.go b/examples/edit_message/main.go
+--- a/examples/edit_message/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/edit_message/main.go	(date 1749526077986)
+@@ -7,8 +7,8 @@
+ 	"os/signal"
+ 	"time"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send any text message to the bot after the bot has been started
+Index: examples/echo/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/echo/main.go b/examples/echo/main.go
+--- a/examples/echo/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/echo/main.go	(date 1749526077994)
+@@ -5,8 +5,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send any text message to the bot after the bot has been started
+Index: examples/getme/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/getme/main.go b/examples/getme/main.go
+--- a/examples/getme/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/getme/main.go	(date 1749526077997)
+@@ -5,7 +5,7 @@
+ 	"fmt"
+ 	"os"
+ 
+-	"github.com/go-telegram/bot"
++	"github.com/tonnext/tg_bot"
+ )
+ 
+ func main() {
+Index: examples/payment/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/payment/main.go b/examples/payment/main.go
+--- a/examples/payment/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/payment/main.go	(date 1749526077988)
+@@ -6,8 +6,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Payments example
+Index: examples/commands/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/commands/main.go b/examples/commands/main.go
+--- a/examples/commands/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/commands/main.go	(date 1749526077968)
+@@ -5,8 +5,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send any text message to the bot after the bot has been started
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/README.md	(date 1749526078019)
+@@ -1,6 +1,6 @@
+ # Golang Telegram Bot
+ 
+-[![Go Report Card](https://goreportcard.com/badge/github.com/go-telegram/bot)](https://goreportcard.com/report/github.com/go-telegram/bot) [![codecov](https://codecov.io/gh/go-telegram/bot/branch/main/graph/badge.svg?token=57B1OR6PCK)](https://codecov.io/gh/go-telegram/bot)
++[![Go Report Card](https://goreportcard.com/badge/github.com/tonnext/tg_bot)](https://goreportcard.com/report/github.com/tonnext/tg_bot) [![codecov](https://codecov.io/gh/go-telegram/bot/branch/main/graph/badge.svg?token=57B1OR6PCK)](https://codecov.io/gh/go-telegram/bot)
+ 
+ ✅ Present in the list of libraries https://core.telegram.org/bots/samples#go
+ 
+@@ -20,8 +20,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send any text message to the bot after the bot has been started
+@@ -61,7 +61,7 @@
+ Install the dependencies:
+ 
+ ```bash
+-go get -u github.com/go-telegram/bot
++go get -u github.com/tonnext/tg_bot
+ ```
+ 
+ Initialize and run the bot:
+Index: examples/send_paid_media/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/send_paid_media/main.go b/examples/send_paid_media/main.go
+--- a/examples/send_paid_media/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/send_paid_media/main.go	(date 1749526077991)
+@@ -8,8 +8,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ func main() {
+Index: methods_params.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/methods_params.go b/methods_params.go
+--- a/methods_params.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/methods_params.go	(date 1749526077979)
+@@ -1,7 +1,7 @@
+ package bot
+ 
+ import (
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ type SetWebhookParams struct {
+Index: methods_test.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/methods_test.go b/methods_test.go
+--- a/methods_test.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/methods_test.go	(date 1749526077954)
+@@ -8,7 +8,7 @@
+ 	"net/http"
+ 	"testing"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ type httpClient struct {
+Index: examples/send_document/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/send_document/main.go b/examples/send_document/main.go
+--- a/examples/send_document/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/send_document/main.go	(date 1749526078030)
+@@ -7,8 +7,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send any text message to the bot after the bot has been started
+Index: examples/command_handler/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/command_handler/main.go b/examples/command_handler/main.go
+--- a/examples/command_handler/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/command_handler/main.go	(date 1749526078007)
+@@ -5,8 +5,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send any text message to the bot after the bot has been started
+Index: examples/inline_keyboard/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/inline_keyboard/main.go b/examples/inline_keyboard/main.go
+--- a/examples/inline_keyboard/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/inline_keyboard/main.go	(date 1749526078000)
+@@ -5,8 +5,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send any text message to the bot after the bot has been started
+Index: go.mod
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/go.mod b/go.mod
+--- a/go.mod	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/go.mod	(date 1749525932980)
+@@ -1,3 +1,3 @@
+-module github.com/go-telegram/bot
++module github.com/tonnext/tg_bot
+ 
+ go 1.18
+Index: examples/echo_with_webhook/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/echo_with_webhook/main.go b/examples/echo_with_webhook/main.go
+--- a/examples/echo_with_webhook/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/echo_with_webhook/main.go	(date 1749526078034)
+@@ -6,8 +6,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send any text message to the bot after the bot has been started
+Index: process_update_test.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/process_update_test.go b/process_update_test.go
+--- a/process_update_test.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/process_update_test.go	(date 1749526077951)
+@@ -4,7 +4,7 @@
+ 	"context"
+ 	"testing"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ func Test_applyMiddlewares(t *testing.T) {
+Index: bot_test.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/bot_test.go b/bot_test.go
+--- a/bot_test.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/bot_test.go	(date 1749526077960)
+@@ -11,7 +11,7 @@
+ 	"testing"
+ 	"time"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ type serverMock struct {
+Index: examples/send_photo_upload/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/send_photo_upload/main.go b/examples/send_photo_upload/main.go
+--- a/examples/send_photo_upload/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/send_photo_upload/main.go	(date 1749526077940)
+@@ -7,8 +7,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send any text message to the bot after the bot has been started
+Index: build_request_form.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build_request_form.go b/build_request_form.go
+--- a/build_request_form.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/build_request_form.go	(date 1749526078005)
+@@ -9,7 +9,7 @@
+ 	"reflect"
+ 	"strings"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ type inputMedia interface {
+Index: examples/handler_match_func/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/handler_match_func/main.go b/examples/handler_match_func/main.go
+--- a/examples/handler_match_func/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/handler_match_func/main.go	(date 1749526077976)
+@@ -6,8 +6,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send any text message to the bot after the bot has been started
+Index: examples/send_media_group/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/send_media_group/main.go b/examples/send_media_group/main.go
+--- a/examples/send_media_group/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/send_media_group/main.go	(date 1749526078010)
+@@ -7,8 +7,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send any text message to the bot after the bot has been started
+Index: process_update.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/process_update.go b/process_update.go
+--- a/process_update.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/process_update.go	(date 1749526077957)
+@@ -3,7 +3,7 @@
+ import (
+ 	"context"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ func applyMiddlewares(h HandlerFunc, m ...Middleware) HandlerFunc {
+Index: methods.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/methods.go b/methods.go
+--- a/methods.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/methods.go	(date 1749526077983)
+@@ -3,7 +3,7 @@
+ import (
+ 	"context"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // SetWebhook https://core.telegram.org/bots/api#setwebhook
+Index: examples/inline_keyboard_multiselect/main.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/inline_keyboard_multiselect/main.go b/examples/inline_keyboard_multiselect/main.go
+--- a/examples/inline_keyboard_multiselect/main.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/examples/inline_keyboard_multiselect/main.go	(date 1749526077971)
+@@ -6,8 +6,8 @@
+ 	"os"
+ 	"os/signal"
+ 
+-	"github.com/go-telegram/bot"
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Send /select command to the bot to see the example in action.
+Index: webhook_handler_test.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/webhook_handler_test.go b/webhook_handler_test.go
+--- a/webhook_handler_test.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/webhook_handler_test.go	(date 1749526078024)
+@@ -10,7 +10,7 @@
+ 	"net/http/httptest"
+ 	"testing"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ type mockDebugHandler struct {
+Index: build_request_form_test.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build_request_form_test.go b/build_request_form_test.go
+--- a/build_request_form_test.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/build_request_form_test.go	(date 1749526077963)
+@@ -6,7 +6,7 @@
+ 	"strings"
+ 	"testing"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ func assertFormData(t *testing.T, data, expect string) {
+Index: handlers.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/handlers.go b/handlers.go
+--- a/handlers.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/handlers.go	(date 1749526078016)
+@@ -4,7 +4,7 @@
+ 	"regexp"
+ 	"strings"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ type HandlerType int
+Index: webhook_handler.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/webhook_handler.go b/webhook_handler.go
+--- a/webhook_handler.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/webhook_handler.go	(date 1749526078027)
+@@ -5,7 +5,7 @@
+ 	"io"
+ 	"net/http"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ func (b *Bot) WebhookHandler() http.HandlerFunc {
+Index: bot.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/bot.go b/bot.go
+--- a/bot.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/bot.go	(date 1749526078022)
+@@ -10,7 +10,7 @@
+ 	"sync"
+ 	"time"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ const (
+Index: options.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/options.go b/options.go
+--- a/options.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/options.go	(date 1749526078002)
+@@ -3,7 +3,7 @@
+ import (
+ 	"time"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ // Option is a function that configures a bot.
+Index: handlers_test.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/handlers_test.go b/handlers_test.go
+--- a/handlers_test.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/handlers_test.go	(date 1749526077973)
+@@ -4,7 +4,7 @@
+ 	"regexp"
+ 	"testing"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ func findHandler(b *Bot, id string) *handler {
+Index: get_updates.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/get_updates.go b/get_updates.go
+--- a/get_updates.go	(revision eec2bec4a29851adf36fe863966cc9a3beace117)
++++ b/get_updates.go	(date 1749526077966)
+@@ -7,7 +7,7 @@
+ 	"sync/atomic"
+ 	"time"
+ 
+-	"github.com/go-telegram/bot/models"
++	"github.com/tonnext/tg_bot/models"
+ )
+ 
+ const (

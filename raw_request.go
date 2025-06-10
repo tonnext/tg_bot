@@ -84,6 +84,7 @@ func (b *Bot) rawRequest(ctx context.Context, method string, params any, dest an
 
 	r := apiResponse{}
 
+	//fmt.Println("======body=====", string(body))
 	errDecode := json.Unmarshal(body, &r)
 	if errDecode != nil {
 		return fmt.Errorf("error decode response body for method %s, %s, %w", method, body, errDecode)

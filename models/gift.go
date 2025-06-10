@@ -71,20 +71,37 @@ const (
 
 // OwnedGiftRegular https://core.telegram.org/bots/api#ownedgiftregular
 type OwnedGiftRegular struct {
-	Type              OwnedGiftType `json:"type"`
-	Gift              Gift          `json:"gift"`
-	OwnedGiftID       string        `json:"owned_gift_id,omitempty"`
-	SenderUser        *User         `json:"sender_user,omitempty"`
-	SendDate          int           `json:"send_date"`
-	IsSaved           bool          `json:"is_saved,omitempty"`
-	CanBeTransferred  bool          `json:"can_be_transferred,omitempty"`
-	TransferStarCount int           `json:"transfer_star_count,omitempty"`
+	Type OwnedGiftType `json:"type"`
+	Gift Gift          `json:"gift"`
+
+	OwnedGiftID string `json:"owned_gift_id,omitempty"`
+	SenderUser  *User  `json:"sender_user,omitempty"`
+	SendDate    int    `json:"send_date"`
+	IsSaved     bool   `json:"is_saved,omitempty"`
+
+	//CanBeTransferred  bool   `json:"can_be_transferred,omitempty"`
+	//TransferStarCount int `json:"transfer_star_count,omitempty"`
+
+	ConvertStarCount        int             `json:"convert_star_count,omitempty"`
+	PrepaidUpgradeStarCount int             `json:"prepaid_upgrade_star_count,omitempty"`
+	WasRefunded             bool            `json:"was_refunded,omitempty"`
+	CanBeUpgraded           bool            `json:"can_be_upgraded,omitempty"`
+	Text                    string          `json:"text,omitempty"`
+	Entities                []MessageEntity `json:"entities,omitempty"`
+	IsPrivate               bool            `json:"is_private,omitempty"`
 }
 
 // OwnedGiftUnique https://core.telegram.org/bots/api#ownedgiftunique
 type OwnedGiftUnique struct {
 	Type OwnedGiftType `json:"type"`
 	Gift UniqueGift    `json:"gift"`
+
+	OwnedGiftID       string `json:"owned_gift_id,omitempty"`
+	SenderUser        *User  `json:"sender_user,omitempty"`
+	SendDate          int    `json:"send_date"`
+	IsSaved           bool   `json:"is_saved,omitempty"`
+	CanBeTransferred  bool   `json:"can_be_transferred,omitempty"`
+	TransferStarCount int    `json:"transfer_star_count,omitempty"`
 }
 
 // OwnedGifts https://core.telegram.org/bots/api#ownedgifts
@@ -107,14 +124,14 @@ type UniqueGift struct {
 // UniqueGiftModel https://core.telegram.org/bots/api#uniquegiftmodel
 type UniqueGiftModel struct {
 	Name           string  `json:"name"`
-	Sticker        Sticker `json:"sticker"`
+	Sticker        Sticker `json:"-"`
 	RarityPerMille int     `json:"rarity_per_mille"`
 }
 
 // UniqueGiftSymbol https://core.telegram.org/bots/api#uniquegiftsymbol
 type UniqueGiftSymbol struct {
 	Name           string  `json:"name"`
-	Sticker        Sticker `json:"sticker"`
+	Sticker        Sticker `json:"-"`
 	RarityPerMille int     `json:"rarity_per_mille"`
 }
 
