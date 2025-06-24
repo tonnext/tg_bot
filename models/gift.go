@@ -12,12 +12,12 @@ type Gifts struct {
 
 // Gift https://core.telegram.org/bots/api#gift
 type Gift struct {
-	ID               string  `json:"id"`
-	Sticker          Sticker `json:"-"`
-	StarCount        int     `json:"star_count"`
-	UpgradeStarCount int     `json:"upgrade_star_count,omitempty"`
-	TotalCount       int     `json:"total_count,omitempty"`
-	RemainingCount   int     `json:"remaining_count,omitempty"`
+	ID               string   `json:"id"`
+	Sticker          *Sticker `json:"sticker,omitempty"`
+	StarCount        int      `json:"star_count"`
+	UpgradeStarCount int      `json:"upgrade_star_count,omitempty"`
+	TotalCount       int      `json:"total_count,omitempty"`
+	RemainingCount   int      `json:"remaining_count,omitempty"`
 }
 
 // AcceptedGiftTypes https://core.telegram.org/bots/api#acceptedgifttypes
@@ -123,16 +123,16 @@ type UniqueGift struct {
 
 // UniqueGiftModel https://core.telegram.org/bots/api#uniquegiftmodel
 type UniqueGiftModel struct {
-	Name           string  `json:"name"`
-	Sticker        Sticker `json:"-"`
-	RarityPerMille int     `json:"rarity_per_mille"`
+	Name           string   `json:"name"`
+	Sticker        *Sticker `json:"sticker,omitempty"`
+	RarityPerMille int      `json:"rarity_per_mille"`
 }
 
 // UniqueGiftSymbol https://core.telegram.org/bots/api#uniquegiftsymbol
 type UniqueGiftSymbol struct {
-	Name           string  `json:"name"`
-	Sticker        Sticker `json:"-"`
-	RarityPerMille int     `json:"rarity_per_mille"`
+	Name           string   `json:"name"`
+	Sticker        *Sticker `json:"sticker,omitempty"`
+	RarityPerMille int      `json:"rarity_per_mille"`
 }
 
 // UniqueGiftBackdropColors https://core.telegram.org/bots/api#uniquegiftbackdropcolors
